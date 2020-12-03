@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  php:
+    image: thecodingmachine/php:7.4-v3-apache
+    environment:
+      PHP_INI_MEMORY_LIMIT: 2g
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "81:80"
